@@ -4,7 +4,7 @@
 
 『设置』中包含了关于应用的基础设置和数据设置，如图1-1所示，点击**『设置』**进行相关配置。
 <div style="width:100%; text-align: center">
-  <img src="/demo/sysConfig.png" />
+  <img src="./demo/sysConfig.png" />
   <p>图 1-1 设置</p>
 </div>
 
