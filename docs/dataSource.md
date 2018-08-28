@@ -13,7 +13,7 @@
 本例首先构建一个名为『列表查询』的数据源，具体配置如图2-1所示。
 
 <div style="width:100%; text-align: center">
-  <img src="/demo/setData.png" />
+  <img src="./demo/setData.png" />
   <p>图 2-1 新建数据源</p>
 </div>
 
@@ -27,7 +27,7 @@
 ▶ 因此，我们需要在进行以上这些操作时挂载数据源。其中，表格挂载数据源的方式如图3-1所示。
 
 <div style="width:100%; text-align: center">
-  <img src="/demo/tableData.png" />
+  <img src="./demo/tableData.png" />
   <p>图 3-1 表格挂载数据源</p>
 </div>
 
@@ -45,14 +45,14 @@
 ▶ 按钮请求数据源的方式比较特殊，首先需要给按钮添加『onClick』点击事件，然后为事件执行时添加动作。图3-2演示了为『查询』按钮添加动作，其它按钮的添加方式与此一致，只需匹配相应的数据源即可。
 
 <div style="width:100%; text-align: center">
-  <img src="/demo/action.png" />
+  <img src="./demo/action.png" />
   <p>图 3-2 按钮动作</p>
 </div>
 
 ▶ 需要注意的是，『新增』、『修改』和『删除』按钮在执行完相应的数据请求动作后还需要执行『刷新列表』动作。
 
 <div style="width:100%; text-align: center">
-  <img src="/demo/fresh.png" />
+  <img src="./demo/fresh.png" />
   <p>图 3-3 刷新列表</p>
 </div>
 

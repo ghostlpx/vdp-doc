@@ -18,7 +18,7 @@
 ▶ 如图3-1所示，点击『保存』，系统会弹出对话框，此时为应用命名，并确定版本号。
 
 <div style="width:100%; text-align: center">
-  <img src="/demo/save.png" />
+  <img src="./demo/save.png" />
   <p>图 3-1</p>
 </div>
 
@@ -27,7 +27,7 @@
 ▶ 如图3-2所示，点击『修改』再次进入设计界面，此时，你可以真正开始你的 **VDP** 设计之旅了。
 
 <div style="width:100%; text-align: center">
-  <img src="/demo/modify.png" />
+  <img src="./demo/modify.png" />
   <p>图 3-2</p>
 </div>
 

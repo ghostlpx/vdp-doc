@@ -46,7 +46,7 @@
 
 如图2-1所示，『管理页面』中存放着所有应用页面，在这里用户可以创建一个新的页面，也可以在现有模板的基础上对页面进行编辑。
 <div style="width:100%; text-align: center">
-  <img src="/demo/pageConfig.png" />
+  <img src="./demo/pageConfig.png" />
   <p>图 2-1 管理页面</p>
 </div>
 
@@ -69,7 +69,7 @@
 
 无论是表格还是图形，或者其它展现类的页面，都离不开数据。我们在设计的时候单独抽离出**『数据源』**的概念，考虑到了所有可能遇到的场景，在这里用户可以创建多个数据源以满足不同类型的需求。使用方法极其简单，在需要用到数据的组件上绑定相应的数据源即可。
 <div style="width:100%; text-align: center">
-  <img src="/demo/dataSource.png" />
+  <img src="./demo/dataSource.png" />
   <p>图 3-1 数据源</p>
 </div>
 
@@ -110,7 +110,7 @@
 
 **『保存为模板』**功能赋予了用户私人订制的能力，该功能可以将用户设计的产品保存到『个人模板库』中，方便后续取用。
 <div style="width:100%; text-align: center">
-  <img src="/demo/saveAs.png" />
+  <img src="./demo/saveAs.png" />
   <p>图 4-1 个人模板库</p>
 </div>
 
