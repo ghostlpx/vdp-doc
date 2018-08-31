@@ -14,7 +14,7 @@
 ```
 
 ### this.getDsData(name) {docsify-ignore}
-  获取指定数据源返回的数据，带完整状态等信息  
+  获取指定数据源返回的数据，带完整状态等信息。  
   • <span class="token keyword">name</span> {string} 数据源名称
 ```js
   const data = this.getDsData("测试数据源");
@@ -22,11 +22,11 @@
     console.log(data.data);
   }
 ```
-### this.getFormValues(name) {docsify-ignore}
+### this.getFormValues(name, fieldName, isToQueryString) {docsify-ignore}
   获取指定表单收集的数据  
-  • <span class="token keyword">name</span> {string, array} 表单名称集合
-  • <span class="token keyword">name</span> {string, fieldName} 字段名称，不指定获取所有字段值
-  • <span class="token keyword">name</span> {string, isToQueryString} 是否转换为url参数形式
+  • <span class="token keyword">name</span> {array} 表单名称集合  
+  • <span class="token keyword">fieldName</span> {string} 字段名称，若不指定则获取所有字段值  
+  • <span class="token keyword">isToQueryString</span> {boolean} 是否转换为url参数形式
 ```js
   // 如果有一些场景，默认表单传递的值不能满足后台解析需要，可添加自定义代码，先获取表单值，做处理以后传递给变量
   const formValues  = this.getFormValues(['表单1', '表单2']);
@@ -50,7 +50,7 @@
   });
 ```
 ### this.isEdit() {docsify-ignore}
-  判断当前页面是否处于修改状态，以填充表单动作作为判断依据  
+  判断当前页面是否处于修改状态，以填充表单动作作为判断依据。  
 ```js
   // 弹窗的标题根据状态展示
   const isEdit =  this.isEdit();
@@ -73,7 +73,7 @@
   console.log(clientWidth);
 ```
 ### util.getUrlParams() {docsify-ignore}
-  获取地址栏参数，返回值object  
+  获取地址栏参数  
   • <span class="token keyword">return</span> {object} 变量对象
 ```js
   const params = util.getUrlParams();
@@ -90,7 +90,7 @@
   读写cookie  
   • <span class="token keyword">name</span> {string} cookie键值  
   • <span class="token keyword">value</span> {string} cookie值  
-  • <span class="token keyword">options</span> {string} cookie选项设置  
+  • <span class="token keyword">options</span> {object} cookie选项设置  
 ```js
   // 读cookie  
   const userInfo = util.cookie('vdp');
@@ -105,8 +105,7 @@
 ### qs.get(url, params) {docsify-ignore}
   发送一个get请求  
   • <span class="token keyword">url</span> {string} 请求的url地址  
-  • <span class="token keyword">params</span> {object} 请求的参数值  
-  • <span class="token keyword">return</span> {string} Promise  
+  • <span class="token keyword">params</span> {object} 请求的参数值    
 ```js
   qs.get('/api/user/list',{
     userId:'1',
@@ -119,7 +118,6 @@
   发送一个post请求  
   • <span class="token keyword">url</span> {string} 请求的url地址  
   • <span class="token keyword">params</span> {object} 请求的参数值  
-  • <span class="token keyword">return</span> {string} Promise  
 ```js
   qs.post('/api/user/list',{
     userId:'1',
