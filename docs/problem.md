@@ -59,4 +59,15 @@
   以省市两级联动为例  
   1、准备两个数据源，数据源1返回省列表，无参数；数据源2返回城市列表，参数来源为表单，或者变量方式  
   2、省级选择器添加onSelect事件，添加动作异步请求，调用数据源2
-
+### ☛ 线上 vendor.js 文件过大导致白屏时间很长怎么办？
+  请联系运维同学开启线上nginx的gzip压缩功能，配置如下：
+  ```
+    gzip on;
+    gzip_min_length 1k;
+    gzip_buffers 4 16k;
+    gzip_http_version 1.1;
+    gzip_comp_level 6;
+    gzip_types text/plain application/javascript application/x-javascript text/javascript text/xml text/css;
+    gzip_disable "MSIE [1-6]\.";
+    gzip_vary on;
+  ```
